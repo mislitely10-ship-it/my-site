@@ -82,16 +82,17 @@
             max-width: 800px;
             width: 100%;
             margin: 0 auto;
-            text-align: center; 
+            text-align: center;
         }
 
         /* Стили для фото в контенте */
         .content img {
+            display: block;
             max-width: 100%;
             height: auto;
-            border-radius: 15px; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-            margin-top: 20px;
+            margin: 20px auto 0; /* Отступ сверху и центрирование */
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         /* Подвал */
@@ -121,10 +122,13 @@
 
     <div class="content">
         <h1>Добро пожаловать!</h1>
-        <p>А вот и мое первое фото на сайте:</p>
-        
-        <!-- ЗДЕСЬ ТО ЖЕ САМОЕ ФОТО ВЫВОДИТСЯ НА СТРАНИЦЕ -->
+        <p>А вот и мое первое и второе фото на сайте:</p>
+
+        <!-- ФОТО 1 -->
         <img src="jiusuk_logo.png" alt="Мое первое фото">
+
+        <!-- ФОТО 2 (под первым фото) -->
+        <img src="gavgav.jpg" alt="Мое второе фото">
     </div>
 
     <footer class="footer">
