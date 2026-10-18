@@ -44,10 +44,13 @@
             align-items: center;
         }
 
+        /* Стили для картинки в логотипе */
         .logo img {
             display: block;
-            height: 64px;
+            height: 64px; /* Высота логотипа */
             width: auto;
+            border-radius: 50%; /* Если хотите сделать логотип круглым, оставьте эту строку. Если нет - удалите её */
+            object-fit: cover; /* Чтобы фото не сплющивалось */
         }
 
         /* Кнопка по центру */
@@ -79,15 +82,16 @@
             max-width: 800px;
             width: 100%;
             margin: 0 auto;
-            text-align: center; /* Центрируем контент */
+            text-align: center; 
         }
 
-        /* Стили для фото, чтобы оно не вылезало за края */
+        /* Стили для фото в контенте */
         .content img {
             max-width: 100%;
             height: auto;
-            border-radius: 15px; /* Скругленные углы для красоты */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Легкая тень */
+            border-radius: 15px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+            margin-top: 20px;
         }
 
         /* Подвал */
@@ -109,17 +113,17 @@
 
     <header class="header">
         <a class="logo" href="/" aria-label="На главную">
-            <img src="jlusuk_logo.png" alt="Логотип сайта">
+            <!-- ЗДЕСЬ МЫ УКАЗАЛИ ВАШЕ ФОТО ДЛЯ ЛОГОТИПА -->
+            <img src="jiusuk_logo.png" alt="Логотип сайта">
         </a>
         <a class="tg-button" href="https://t.me/jiusuk" target="_blank" rel="noopener">Мой tg</a>
     </header>
 
-    <!-- ДОБАВИЛИ БЛОК CONTENT ВОТ СЮДА -->
     <div class="content">
         <h1>Добро пожаловать!</h1>
         <p>А вот и мое первое фото на сайте:</p>
         
-        <!-- ТЕГ ДЛЯ ФОТО. Убедитесь, что имя файла совпадает с тем, что вы загрузили на GitHub -->
+        <!-- ЗДЕСЬ ТО ЖЕ САМОЕ ФОТО ВЫВОДИТСЯ НА СТРАНИЦЕ -->
         <img src="jiusuk_logo.png" alt="Мое первое фото">
     </div>
 
